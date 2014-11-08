@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common_code">
+      <UniqueIdentifier>{fb510ec3-b561-4f7f-bbaf-02ecb087781b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="record-app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KinectRecorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\colors.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\configparser.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\cudaInlineDebug.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\cudaInlineMisc.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\cvecs.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\debugs.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\everything.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\files.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\FPSMeter.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\maths.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\matrices.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\misc.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\physics.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\rands.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\strings.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\timings.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_code\versions.h">
+      <Filter>common_code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="record-app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KinectRecorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_code\configparser.cpp">
+      <Filter>common_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_code\cvecs.cpp">
+      <Filter>common_code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="record-app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="record-app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
