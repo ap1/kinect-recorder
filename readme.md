@@ -8,6 +8,7 @@ A simple app to record and playback body frames received from a Kinect for Windo
 
 This work is licensed under a Creative Commons Attribution 3.0 Unported License: http://creativecommons.org/licenses/by/3.0/
 
+Please attribute "Github user ap1"
+
 # Todo
-- code cleanup
-- write csv input code
+- Refactor code
