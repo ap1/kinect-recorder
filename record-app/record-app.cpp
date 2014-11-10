@@ -53,8 +53,8 @@ void DrawBone(HDC& hdc, const BodyInFrame& b, JointType j0, JointType j1)
   cvec3f pos1 = b.joints[j1];
 
   DrawLine(hdc, 
-    recorder.GetScreenPoint(pos0, 0.0f, 0.0f), 
-    recorder.GetScreenPoint(pos1, 0.0f, 0.0f));
+    recorder.GetScreenPoint(pos0, 0, 0), 
+    recorder.GetScreenPoint(pos1, 0, 0));
 }
 
 void DrawBody(HDC& hdc, const BodyInFrame& b)
@@ -262,7 +262,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         GetOpenFileName(&ofn);
         wcstombs (openFileName, ofn.lpstrFile, MAX_PATH);
 
-        recorder.SaveToFile(openFileName);
+        recorder.LoadFromFile(openFileName);
       }
       break;
       case IDM_SAVE:
@@ -287,9 +287,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         recorder.SaveToFile(saveFileName);
       }
       break;
-      case IDM_REC_START: recorder.start_recording();
+      case IDM_REC_START: recorder.StartRecording();
       break;
-      case IDM_REC_STOP:  recorder.stop_recording();
+      case IDM_REC_STOP:  recorder.StopRecording();
       break;
       case IDM_PLAY:
         state = (state == eAppState::Playing) ? eAppState::Idle : eAppState::Playing;
